@@ -1,0 +1,125 @@
+/* 全局基础设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #ffffff; /* 极简白底 */
+    color: #333333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 让所有内容居中 */
+}
+
+/* 顶部导航栏 */
+header {
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center; /* 导航居中 */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* 导航项之间的间距 */
+}
+
+nav a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #000000; /* 鼠标悬停或当前页面变成纯黑 */
+}
+
+/* 主容器（限制最大宽度，保持排版整齐） */
+.container {
+    width: 100%;
+    max-width: 700px; /* 限制内容宽度，类似照片里的宽度 */
+    padding: 0 20px 80px 20px;
+}
+
+/* 图片画廊 */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 两张图片之间的间距 */
+    margin-bottom: 40px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* 圆角效果 */
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* 极浅的阴影增加立体感 */
+}
+
+/* 文字区域 */
+.intro-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.intro-text .subtitle {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.intro-text h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+/* 列表链接样式 */
+.site-links {
+    list-style-position: inside; /* 让圆点缩进自然 */
+    color: #333;
+}
+
+.site-links li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.site-links a {
+    color: #0056b3; /* 经典的链接蓝色 */
+    text-decoration: underline; /* 下划线 */
+    text-decoration-color: rgba(0, 86, 179, 0.4); /* 下划线半透明显得不刺眼 */
+    text-underline-offset: 3px; /* 下划线稍微往下挪一点 */
+    transition: all 0.2s;
+}
+
+.site-links a:hover {
+    color: #003d82;
+    text-decoration-color: #003d82;
+}
+
+/* 响应式设计：手机端适配 */
+@media (max-width: 600px) {
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap; /* 如果屏幕太小，导航允许换行 */
+        justify-content: center;
+    }
+    
+    .intro-text h1 {
+        font-size: 28px;
+    }
+    
+    .intro-text .subtitle {
+        font-size: 16px;
+    }
+}

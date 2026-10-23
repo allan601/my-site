@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes - 春晓寒冬</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 极简排版样式 */
+        body {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        
+        .quotes-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        .quotes-title {
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #111;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .quote-item {
+            margin-bottom: 35px;
+            padding-left: 20px;
+            border-left: 3px solid #3498db; /* 左侧蓝色装饰线 */
+        }
+
+        .quote-text {
+            font-size: 18px;
+            line-height: 1.7;
+            font-style: italic;
+            color: #444;
+            margin-bottom: 8px;
+        }
+
+        .quote-author {
+            font-size: 15px;
+            color: #7f8c8d;
+            text-align: right;
+        }
+
+        .quote-author::before {
+            content: "— ";
+        }
+
+        /* 深色模式适配 */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        body.dark-mode .quotes-title { color: #eee; border-color: #333; }
+        body.dark-mode .quote-text { color: #ccc; }
+        body.dark-mode .quote-author { color: #888; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a ></li>
+                <li><a href="quotes.html" class="active">Quotes</a ></li>
+                <li><a href="projects.html">Project ideas</a ></li>
+                <li><a href="about.html">About</a ></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="quotes-container">
+        <h1 class="quotes-title">Things worth reading twice</h1>
+
+        <!-- 12句名言 -->
+        <div class="quote-item">
+            <p class="quote-text">"The only way to do great work is to love what you do."</p >
+            <p class="quote-author">Steve Jobs</p >
+        </div>
+
+        <div class="quote-item">
+            <p class="quote-text">"The best way to predict the future is to create it."</p >
+            <p class="quote-author">Peter Drucker</p >
+        </div>
+
+        <div class="quote-item">
+            <p class="quote-text">"In the middle of difficulty lies opportunity."</p >
+            <p class="quote-author">Albert Einstein</p >
+        </div>
+
+        <div class="quote-item">
+            <p class="quote-text">"Simplicity is the ultimate sophistication."</p >
+            <p class="quote-author">Leonardo da Vinci</p >
+        </div>
+
+        <div class="quote-item">
+            <p class="quote-text">"Talk is cheap. Show me the code."</p >
+            <p class="quote-author">Linus Torvalds</p >
+        </div>
+
+        <div class="quote-item">
+            <p class="quote-text">"It does not matter how slowly you go as long as you do not stop."</p >
+            <p class="quote-author">Confucius</p >
+        </div>
+        
+        <div class="quote-item">
+            <p class="quote-text">"Stay hungry, stay foolish."</p >
+            <p class="quote-author">Steve Jobs</p >
+        </div>
+        
+        <div class="quote-item">
+            <p class="quote-text">"The journey of a thousand miles begins with a single step."</p >
+            <p class="quote-author">Lao Tzu</p >
+        </div>
+
+        <div class="quote-item">
+            <p class="quote-text">"You miss 100% of the shots you don't take."</p >
+            <p class="quote-author">Wayne Gretzky</p >
+        </div>
+
+        <div class="quote-item">
+            <p class="quote-text">"Imagination is more important than knowledge."</p >
+            <p class="quote-author">Albert Einstein</p >
+        </div>
+
+        <div class="quote-item">
+            <p class="quote-text">"We are what we repeatedly do. Excellence, then, is not an act, but a habit."</p >
+            <p class="quote-author">Aristotle</p >
+        </div>
+
+        <div class="quote-item">
+            <p class="quote-text">"Life is what happens when you're busy making other plans."</p >
+            <p class="quote-author">John Lennon</p >
+        </div>
+
+    </main>
+</body>
+</html>

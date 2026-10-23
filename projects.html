@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project ideas - 春晓寒冬</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 保持与你其他页面一致的极简风格 */
+        body {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        
+        .page-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #111;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        /* 列表的基础样式 */
+        ul, ol {
+            margin-left: 25px;
+            line-height: 1.8;
+            color: #444;
+            font-size: 17px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* 定义列表（dl）的专属样式 */
+        dl {
+            margin-top: 15px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #111;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        dd {
+            margin-left: 0;
+            margin-bottom: 15px;
+            color: #7f8c8d;
+            font-size: 16px;
+            padding-left: 15px;
+            border-left: 3px solid #3498db; /* 左侧加条蓝线，看起来更高级 */
+        }
+
+        /* 深色模式适配 */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        body.dark-mode h1 { color: #eee; border-color: #333; }
+        body.dark-mode h2 { color: #ddd; }
+        body.dark-mode ul, body.dark-mode ol { color: #ccc; }
+        body.dark-mode dt { color: #eee; }
+        body.dark-mode dd { color: #888; }
+    </style>
+</head>
+<body>
+    <!-- 顶部极简导航 (与你前两页完全一致) -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a ></li>
+                <li><a href="quotes.html">Quotes</a ></li>
+                <!-- 当前在项目页，所以加 active -->
+                <li><a href="projects.html" class="active">Project ideas</a ></li>
+                <li><a href="about.html">About</a ></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="page-container">
+        <h1>Project ideas</h1>
+
+        <h2>Things I might build</h2>
+        <ul>
+            <li>A site about the food in my hometown</li>
+            <li>Some photos of my cat</li>
+            <li>A guide for new students on campus</li>
+            <li>A recipe converter for people who cook alone</li>
+        </ul>
+
+        <h2>Who each one is for</h2>
+        <dl>
+            <dt>Hometown food</dt>
+            <dd>For students who just moved here.</dd>
+
+            <dt>Photo portfolio</dt>
+            <dd>For places I want to apply to.</dd>
+
+            <dt>Campus guide</dt>
+            <dd>For freshmen who feel lost on their first day.</dd>
+            
+            <dt>Recipe converter</dt>
+            <dd>For people who are tired of eating leftovers.</dd>
+        </dl>
+
+        <h2>How I will build it</h2>
+        <ol>
+            <li>Sketch it</li>
+            <li>Write the HTML</li>
+            <li>Style it</li>
+        </ol>
+    </main>
+    
+</body>
+</html>

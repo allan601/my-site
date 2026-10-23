@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - 春晓寒冬</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 保持统一的白底黑字极简风格 */
+        body {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        
+        .page-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #111;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #444;
+            font-size: 17px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* 链接样式 */
+        a {
+            color: #3498db;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #3498db;
+        }
+
+        /* 联系方式区域的小卡片装饰 */
+        #contact {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+
+        /* 深色模式适配 */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        body.dark-mode h1 { color: #eee; border-color: #333; }
+        body.dark-mode h2 { color: #ddd; }
+        body.dark-mode p, body.dark-mode ul { color: #ccc; }
+        body.dark-mode #contact { background-color: #1e1e1e; }
+    </style>
+</head>
+<body>
+    <!-- 顶部极简导航 (与前几页一致) -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a ></li>
+                <li><a href="quotes.html">Quotes</a ></li>
+                <li><a href="projects.html">Project ideas</a ></li>
+                <!-- 当前在关于页，所以加 active -->
+                <li><a href="about.html" class="active">About</a ></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="page-container">
+        <h1>About 春晓寒冬</h1>
+        
+        <p>I study Computer Science at BiUH. This site is 
+            <strong>written by hand</strong>, one line at a time.
+        </p >
+
+        <h2>What I am learning</h2>
+        <ul>
+            <li>HTML — what each part of a page <em>is</em></li>
+            <li>CSS — what it looks like</li>
+            <li>JavaScript — what it does</li>
+        </ul>
+        
+        <p>Most of my answers come from 
+            <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a >.
+        </p >
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Write to me at 
+                <a href="mailto:391759687@qq.com">391759687@qq.com</a >.
+            </p >
+        </section>
+    </main>
+</body>
+</html>
