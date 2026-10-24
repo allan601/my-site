@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live - 春晓寒冬</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        
+        .page-container {
+            max-width: 900px; /* 图片展示页稍微宽一点 */
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #111;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .intro-text {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* 图片画廊排版：第一张全宽，下面两张并排 */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .photo-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-5px); /* 鼠标悬停卡片微微上浮 */
+        }
+
+        /* 第一张图跨越两列（全宽） */
+        .photo-card.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* 大图高度限制 */
+        .photo-card.full-width img {
+            height: 450px; 
+        }
+
+        /* 小图高度限制 */
+        .photo-card.half-width img {
+            height: 300px;
+        }
+
+        /* 深色模式适配 */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        body.dark-mode h1 { color: #eee; border-color: #333; }
+        body.dark-mode .intro-text { color: #aaa; }
+        
+        /* 手机端变成一列 */
+        @media (max-width: 768px) {
+            .photo-gallery { grid-template-columns: 1fr; }
+            .photo-card.full-width img, .photo-card.half-width img { height: 300px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部极简导航 -->
+    <header>
+                <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quotes.html">Quotes</a></li>
+                <li><a href="projects.html">Project ideas</a></li>
+                <!-- 把下面这行 Live 加进去 -->
+                <li><a href="live.html">Live</a></li> 
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="page-container">
+        <h1>Life is Live</h1>
+        <p class="intro-text">Capturing moments, from the cute alpaca to the beautiful seascape. Written by hand, captured by heart.</p>
+
+        <div class="photo-gallery">
+            <!-- 第一张大图（羊驼） -->
+            <div class="photo-card full-width">
+                <img src="pic1.jpg.jpg" alt="A cute alpaca in the lobby">
+            </div>
+
+            <!-- 第二张图（拱门海景） -->
+            <div class="photo-card half-width">
+                <img src="pic2.jpg.jpg" alt="A beautiful ocean view through an archway">
+            </div>
+
+            <!-- 第三张图（帆船） -->
+            <div class="photo-card half-width">
+                <img src="pic3.jpg.jpg" alt="Sailboats on the blue sea">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
